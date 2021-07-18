@@ -1,4 +1,4 @@
-import { generateInteger, generateRandomFloat, getRandomArrayElement, getRandomArray } from './utils/util.js';
+import { generateInteger, generateRandomFloat, getRandomArrayElement, getRandomArray } from './util.js';
 
 const MIN_LAT = 35.65;
 const MAX_LAT = 35.7;
@@ -55,6 +55,14 @@ const PHOTOS = [
   'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg',
 ];
 
+const roomTypeToTitle = {
+  palace: 'Дворец',
+  flat: 'Квартира',
+  house: 'Дом',
+  bungalow: 'Бунгало',
+  hotel: 'Отель',
+};
+
 const SIMILAR_AD_COUNT = 10;
 
 function createAd() {
@@ -92,3 +100,4 @@ function createAd() {
 
 export { createAd };
 export { SIMILAR_AD_COUNT };
+export { roomTypeToTitle };
