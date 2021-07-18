@@ -1,6 +1,6 @@
-import { createAd } from './data.js';
-import { SIMILAR_AD_COUNT } from './data.js';
+import { createAd } from './ad.js';
+import { SIMILAR_AD_COUNT } from './ad.js';
 
-const simalarAds = new Array(SIMILAR_AD_COUNT).fill(null).map(() => createAd());
+const similarAds = new Array(SIMILAR_AD_COUNT).fill(null).map(() => createAd());
 
-simalarAds;
+similarAds;
