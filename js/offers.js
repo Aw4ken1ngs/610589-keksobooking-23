@@ -1,4 +1,4 @@
-import { roomTypeToTitle } from './ad.js';
+import { RoomTypeToTitle } from './ad.js';
 
 
 const renderCard = (card) => {
@@ -53,7 +53,7 @@ const renderCard = (card) => {
 
     templateType.remove();
   } else {
-    templateType.textContent = roomTypeToTitle[offerType];
+    templateType.textContent = RoomTypeToTitle[offerType];
   }
 
   if (!offerRooms || !offerGuests) {
@@ -82,8 +82,8 @@ const renderCard = (card) => {
     offerFeatures.forEach((item) => {
       const element = document.createElement('li');
       element.classList.add('popup__feature', `popup__feature--${item}`);
-      const featuresTemplate = offerFeatures.map((feature) => `<li class="popup__feature popup__feature--${feature}"></li>`).join('');
-      templateFeatures.innerHTML = featuresTemplate;
+      const featuresTemplates = offerFeatures.map((feature) => `<li class="popup__feature popup__feature--${feature}"></li>`).join('');
+      templateFeatures.innerHTML = featuresTemplates;
     });
 
   }
