@@ -63,6 +63,14 @@ const RoomTypeToTitle = {
   HOTEL: 'Отель',
 };
 
+const RoomTypeToMinPrice = {
+  palace: 10000,
+  flat: 1000,
+  house: 5000,
+  bungalow: 0,
+  hotel: 3000,
+};
+
 const SIMILAR_AD_COUNT = 10;
 
 function createAd() {
@@ -98,4 +106,4 @@ function createAd() {
   };
 }
 
-export { createAd, SIMILAR_AD_COUNT, RoomTypeToTitle };
+export { createAd, SIMILAR_AD_COUNT, RoomTypeToTitle, RoomTypeToMinPrice };
